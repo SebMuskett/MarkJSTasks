@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* class for each colour*/
+.red    {color: red;}
+.blue   {color: blue;}
+.green  {color: green;}
+.yellow {color: rgb(210, 210, 0);}
+.pink   {color: #ff00ff;}
+.purple {color: purple;}

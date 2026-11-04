@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>internal hover</title>
+</head>
+<body>
+    <h1>hover alerts (internal)</h1>
+
+    <p>DO NOT mouse over the button:
+        <button type="button" id="btn">the button</button>
+    </p>
+
+    <script>
+        //function that shows alert box
+        function rolloverAlert() {
+            alert("WHAT HAVE YOU DONE");
+        }
+
+        // attatch the function to the button's mouseover event
+        const btn = document.getElementById("btn");
+        btn.addEventListener("mouseover", rolloverAlert);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>legacy code</title>
+</head>
+<body>
+    <h1>old ass code</h1>
+
+    <button type="button" onclick="sayHello()">hello</button>
+    <button type="button" id="btnBye">goodbye</button>
+
+    <script>
+        function sayHello() {
+            alert("haiii");
+        }
+
+        function sayGoodbye() {
+            alert("byeeeee");
+        }
+
+        function init() {
+            var btnBye = document.getElementById("btnBye");
+            btnBye.onclick = sayGoodbye;
+        }
+
+        window.onload = init;
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>internal JS</title>
+
+</head>
+<body>
+    <h1>JS alerts (internal)</h1>
+
+    <p>Javascript can be written inside HTML file:
+        <button type="button" id="btn">click me!!!!!</button>
+    </p>
+
+    <script>
+        // function that shows an alert box
+        function alertUser() {
+            alert("the button was clicked. what have you done");
+        }
+
+        // find the button and attach the function to its click
+        const btn = document.getElementById("btn");
+        btn.addEventListener("click", alertUser);
+    </script>
+</body>
+</html>
