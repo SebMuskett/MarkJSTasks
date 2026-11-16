@@ -1,0 +1,7 @@
+reg-form-script-v1 is the JavaScript that handles the form validation of reg-form.html.
+In it, there are constants known as "form", "fname" and "sname".
+Each of them store different elements in reg-form.html. they store the form, first name input and surname input respectively.
+getElementByID is used to associate their HTML IDs with these Javascript functions.
+The if statement within the validateForm function are run in sequence. First, it trims (removes excess spaces from) the the first name element and checks if it has any value, then alerts the user if it is empty and stops the default function by using event.preventDefault(). Then the else contains an if statement doing the same thing as the first if, but with the surname.
+Due to this order, if the user leaves both fields empty, it will only alert the user about the first name field being blank.
+In order to prevent the browser from running its built-in validation, "novalidate" is used in the <form> tag in reg-form.html.
