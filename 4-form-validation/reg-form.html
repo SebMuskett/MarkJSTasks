@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>reg</title>
     <link rel="stylesheet" href="form-style.css">
-    <script src="reg-form-script-v1.js" defer></script>
+    <script src="reg-form-script-v2.js" defer></script>
 </head>
 <body>
     <!-- novalidate turns off the browsers built-in validation,
         so that our JS does the checkig instead -->
     <form action="success.html" method="get" id="regForm" novalidate>
         <fieldset>
-            <legend>register</legend>
+            <legend>regsiter</legend>
 
             <div>
                 <label for="fname">frist name</label>
@@ -19,7 +19,7 @@
             </div>
 
             <div>
-                <label for="fname">sruname</label>
+                <label for="sname">sruname</label>
                 <input type="text" name="sname" id="sname">
             </div>
 
@@ -29,5 +29,7 @@
             </div>
         </fieldset>
     </form>
+
+    <p id="errors"></p>
 </body>
 </html>
